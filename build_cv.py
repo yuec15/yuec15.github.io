@@ -198,20 +198,24 @@ story.append(Spacer(1, 12))
 
 story.append(section("RESEARCH INTERESTS & EXPERIENCE"))
 story.append(
+    Paragraph(
+        f"{bold('Interests:')} My research focuses on agentic post-training, "
+        "including multi-agents, vertical agentic applications, and AI for science.",
+        styles["skills"],
+    )
+)
+story.append(Spacer(1, 4))
+story.append(Paragraph(bold("Experience:"), styles["skills"]))
+story.append(
     bullet(
-        e("Agentic LLM Post-Training, Multi-Agents, User-Model interaction, AI for Science"),
+        f"{bold('Avocado')}: Core contributor to agentic post-training — browsing agents, "
+        "multi-agents, user-model interaction, and visual coding.",
         style_name="award_bullet",
     )
 )
 story.append(
     bullet(
-        f"{bold('Avocado')}: Agentic Post-training including Multi-Agent, Browsing, and Visual Coding",
-        style_name="award_bullet",
-    )
-)
-story.append(
-    bullet(
-        f"{bold('Llama3')}: Tool-use Triggering, Safety",
+        f"{bold('Llama3')}: Core contributor to tool-use capabilities and safety.",
         style_name="award_bullet",
     )
 )
