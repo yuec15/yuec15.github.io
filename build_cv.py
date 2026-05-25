@@ -219,6 +219,12 @@ story.append(
         style_name="award_bullet",
     )
 )
+story.append(
+    bullet(
+        f"{bold('AI for Science')}: LLM for protein design and docking.",
+        style_name="award_bullet",
+    )
+)
 story.append(Spacer(1, 10))
 
 story.append(section("PUBLICATIONS"))
