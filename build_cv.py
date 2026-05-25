@@ -208,7 +208,7 @@ story.append(Spacer(1, 4))
 story.append(Paragraph(bold("Experience:"), styles["skills"]))
 story.append(
     bullet(
-        f"{bold('Avocado')}: Core contributor to agentic post-training — browsing agents, "
+        f"{bold('Avocado (Muse Spark)')}: Core contributor to agentic post-training — browsing agents, "
         "multi-agents, user-model interaction, and visual coding.",
         style_name="award_bullet",
     )
