@@ -17,7 +17,7 @@ from reportlab.platypus import (
 )
 
 
-OUT = Path(r"C:\Users\caoyp\Downloads\My_CV_updated.pdf")
+OUT = Path(__file__).with_name("My_CV_updated.pdf")
 
 BODY_SIZE = 11.2
 BODY_LEADING = 13.4
@@ -196,10 +196,22 @@ story.append(
 )
 story.append(Spacer(1, 12))
 
-story.append(section("RESEARCH INTERESTS"))
+story.append(section("RESEARCH INTERESTS & EXPERIENCE"))
 story.append(
     bullet(
         e("Agentic LLM Post-Training, Multi-Agents, User-Model interaction, AI for Science"),
+        style_name="award_bullet",
+    )
+)
+story.append(
+    bullet(
+        f"{bold('Avocado')}: Agentic Post-training including Multi-Agent, Browsing, and Visual Coding",
+        style_name="award_bullet",
+    )
+)
+story.append(
+    bullet(
+        f"{bold('Llama3')}: Tool-use Triggering, Safety",
         style_name="award_bullet",
     )
 )
@@ -344,13 +356,19 @@ for label, value in skills:
     story.append(Paragraph(f"{label} {e(value)}", styles["skills"]))
 
 
-doc = SimpleDocTemplate(
-    str(OUT),
-    pagesize=letter,
-    leftMargin=0.82 * inch,
-    rightMargin=0.82 * inch,
-    topMargin=0.58 * inch,
-    bottomMargin=0.55 * inch,
-)
-doc.build(story)
-print(OUT)
+def main():
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    doc = SimpleDocTemplate(
+        str(OUT),
+        pagesize=letter,
+        leftMargin=0.82 * inch,
+        rightMargin=0.82 * inch,
+        topMargin=0.58 * inch,
+        bottomMargin=0.55 * inch,
+    )
+    doc.build(story)
+    print(OUT)
+
+
+if __name__ == "__main__":
+    main()
