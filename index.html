@@ -5,71 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Yue Cao — AI Research Scientist at Meta MSL Lab.">
     <title>Yue Cao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main class="page">
       <aside class="profile">
+        <h1 class="name">YUE CAO</h1>
         <img class="avatar" src="profile.jpg" alt="Yue Cao">
-        <h1 class="name">Yue Cao</h1>
-        <p class="title">AI Research Scientist</p>
-        <p class="affiliation">Meta MSL Lab</p>
-
+        <p class="bio">
+          AI Research Scientist at <strong>Meta MSL Lab</strong>.
+          Working on agentic post-training, multi-agents, and AI for science.
+        </p>
         <ul class="contact">
-          <li><a href="mailto:caoyppsp@gmail.com">caoyppsp@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/yuecao94/">LinkedIn</a></li>
-          <li><a href="https://scholar.google.com/citations?hl=en&user=bcPdM7MAAAAJ&view_op=list_works">Google Scholar</a></li>
-          <li><a href="My_CV_updated.pdf">CV (PDF)</a></li>
+          <li><a href="mailto:caoyppsp@gmail.com" aria-label="Email">email</a></li>
+          <li><a href="https://www.linkedin.com/in/yuecao94/" aria-label="LinkedIn">linkedin</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&user=bcPdM7MAAAAJ&view_op=list_works" aria-label="Google Scholar">scholar</a></li>
+          <li><a href="My_CV_updated.pdf" aria-label="CV">cv</a></li>
         </ul>
       </aside>
 
       <div class="content">
-        <section class="block" aria-labelledby="about-title">
-          <h2 id="about-title">About</h2>
-          <p>
-            I am an AI Research Scientist at Meta MSL Lab. My research focuses on
-            agentic post-training, including multi-agents, vertical agentic
-            applications, and AI for science. I received my Ph.D. in Electrical
-            Engineering from Texas A&amp;M University and my B.S. in Applied
-            Physics from the University of Science and Technology of China.
-          </p>
-        </section>
-
         <section class="block" aria-labelledby="news-title">
-          <h2 id="news-title">News</h2>
+          <h2 id="news-title">NEWS</h2>
           <ul class="news">
-            <li><span class="news-date">2026</span> <strong>Avocado is live!</strong></li>
+            <li>
+              <span class="news-date">2026</span>
+              <span><strong>Avocado is live!</strong></span>
+            </li>
           </ul>
         </section>
 
         <section class="block" aria-labelledby="pubs-title">
-          <h2 id="pubs-title">Selected Publications</h2>
+          <h2 id="pubs-title">PAPERS</h2>
           <ol class="pubs">
             <li>
-              Y. You, <strong>Y. Cao</strong>, T. Chen, Z. Wang, and Y. Shen.
-              <em>Bayesian Learning to Optimize: Quantifying the Optimizer
-              Uncertainty.</em>
-              <span class="venue">International Conference on Learning Representations</span>, 2021.
+              <p class="pub-title">Bayesian Learning to Optimize: Quantifying the Optimizer Uncertainty</p>
+              <p class="pub-authors">Y. You, <strong>Y. Cao</strong>, T. Chen, Z. Wang, Y. Shen</p>
+              <p class="pub-venue">International Conference on Learning Representations (ICLR), 2021</p>
             </li>
             <li>
-              <strong>Y. Cao</strong>, P. Das, V. Chenthamarakshan, P. Chen,
-              I. Melnyk, and Y. Shen.
-              <em>Fold2Seq: A Joint Sequence(1D)-Fold(3D) Embedding-based
-              Generative Model for Protein Design.</em>
-              <span class="venue">International Conference on Machine Learning</span> 139, 1261&ndash;1271, 2021.
+              <p class="pub-title">Fold2Seq: A Joint Sequence(1D)-Fold(3D) Embedding-based Generative Model for Protein Design</p>
+              <p class="pub-authors"><strong>Y. Cao</strong>, P. Das, V. Chenthamarakshan, P. Chen, I. Melnyk, Y. Shen</p>
+              <p class="pub-venue">International Conference on Machine Learning (ICML), 2021</p>
             </li>
             <li>
-              <strong>Y. Cao</strong>, T. Chen, Z. Wang, and Y. Shen.
-              <em>Learning to Optimize in Swarms.</em>
-              <span class="venue">Advances in Neural Information Processing Systems</span> 32, 15018&ndash;15028, 2019.
+              <p class="pub-title">Learning to Optimize in Swarms</p>
+              <p class="pub-authors"><strong>Y. Cao</strong>, T. Chen, Z. Wang, Y. Shen</p>
+              <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2019</p>
             </li>
             <li>
-              <strong>Y. Cao</strong> and Y. Shen.
-              <em>TALE: Transformer-based protein function Annotation with joint
-              sequence-Label Embedding.</em>
-              <span class="venue">Bioinformatics</span> 37(18), 2825&ndash;2833, 2021.
+              <p class="pub-title">TALE: Transformer-based Protein Function Annotation with Joint Sequence-Label Embedding</p>
+              <p class="pub-authors"><strong>Y. Cao</strong>, Y. Shen</p>
+              <p class="pub-venue">Bioinformatics, 37(18), 2021</p>
             </li>
           </ol>
+        </section>
+
+        <section class="block" aria-labelledby="about-title">
+          <h2 id="about-title">ABOUT</h2>
+          <p>
+            I received my Ph.D. in Electrical Engineering from Texas A&amp;M
+            University and my B.S. in Applied Physics from the University of
+            Science and Technology of China.
+          </p>
+          <p>
+            Full publication list and prior work available in my
+            <a href="My_CV_updated.pdf">CV</a>.
+          </p>
         </section>
       </div>
     </main>
