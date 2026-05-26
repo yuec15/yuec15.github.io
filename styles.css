@@ -161,13 +161,18 @@ a:focus {
 /* Publications */
 
 .pubs {
-  list-style: none;
+  list-style: disc;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 1.25rem;
 }
 
 .pubs li {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.25rem;
+}
+
+.pubs li::marker {
+  color: var(--fg);
 }
 
 .pub-title {
@@ -208,7 +213,7 @@ a:focus {
   width: 100%;
   max-width: 520px;
   height: auto;
-  margin: 0.65rem 0 0;
+  margin: 0.75rem auto 0.25rem;
   border: 1px solid var(--border);
   border-radius: 4px;
 }
