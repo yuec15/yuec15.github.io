@@ -237,7 +237,7 @@ publications = [
     ),
     (
         f"Y. You, {bold('Y. Cao')}, T. Chen, Z. Wang, and Y. Shen",
-        "Bayesian Learning to Optimize: Quantifying the Optimizer Uncertainty",
+        "Bayesian Modeling and Uncertainty Quantification for Learning to Optimize: What, Why, and How",
         bold("International Conference on Learning Representations"),
         ", 2021.",
     ),
