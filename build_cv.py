@@ -181,7 +181,7 @@ story.append(
 )
 
 story.append(section("PROFESSIONAL EXPERIENCE"))
-story.append(role_entry("Meta MSL Lab", "Mar. 2022 - Present", "AI Research Scientist"))
+story.append(role_entry("Meta MSL Lab", "Mar. 2022 - Present", "AI Research Scientist, Post Training"))
 story.append(Spacer(1, 12))
 
 story.append(section("EDUCATION"))
