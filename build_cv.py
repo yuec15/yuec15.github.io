@@ -112,6 +112,15 @@ styles = {
         firstLineIndent=-14,
         spaceAfter=4.0,
     ),
+    "sub_bullet": ParagraphStyle(
+        "sub_bullet",
+        fontName="Times-Roman",
+        fontSize=BODY_SIZE,
+        leading=BODY_LEADING,
+        leftIndent=28,
+        firstLineIndent=-12,
+        spaceAfter=2.4,
+    ),
     "skills": ParagraphStyle(
         "skills",
         fontName="Times-Roman",
@@ -208,11 +217,22 @@ story.append(Spacer(1, 4))
 story.append(Paragraph(bold("Experience:"), styles["skills"]))
 story.append(
     bullet(
-        f"{bold('Avocado (Muse Spark)')}: Tech lead for agentic vertical ability, model product behaviour. "
-        "Core contributor to multi-agents and visual coding.",
+        f"{bold('Avocado (Muse Spark)')} &nbsp;"
+        + link("News", "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"),
         style_name="award_bullet",
     )
 )
+avocado_items = [
+    "Tech lead for agentic financial ability, leading Muse Spark to SOTA on Finance Agent v2 and Tax Bench.",
+    "Tech lead for Muse Spark's presentation quality, reaching Elo 1653 on GDPval-AA v2 and surpassing "
+    "Opus 4.8 and Sonnet 5.0.",
+    "Tech lead for Muse Spark's model behaviour on steerability and proactiveness, making the model handle "
+    "user interruption messages and device handoff messages better.",
+    "Core contributor to browsing agent and multi-agents, reflected by several benchmarks reported in the "
+    "blog: DeepSearchQA, WildSearch, and multi-agent plots.",
+]
+for item in avocado_items:
+    story.append(Paragraph("&bull; " + e(item), styles["sub_bullet"]))
 story.append(
     bullet(
         f"{bold('Llama3')}: Core contributor to tool-use capabilities and safety.",
