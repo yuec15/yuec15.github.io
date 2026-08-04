@@ -218,21 +218,22 @@ story.append(Paragraph(bold("Experience:"), styles["skills"]))
 story.append(
     bullet(
         f"{bold('Avocado (Muse Spark)')} &nbsp;"
-        + link("News", "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"),
+        + link("Release Blog", "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"),
         style_name="award_bullet",
     )
 )
 avocado_items = [
-    "Tech lead for agentic financial ability, leading Muse Spark to SOTA on Finance Agent v2 and Tax Bench.",
-    "Tech lead for Muse Spark's presentation quality, reaching Elo 1653 on GDPval-AA v2 and surpassing "
-    "Opus 4.8 and Sonnet 5.0.",
+    f"Tech lead for agentic financial ability, leading Muse Spark to {bold('SOTA')} on "
+    f"{bold('Finance Agent v2')} and {bold('Tax Bench')}.",
+    f"Tech lead for Muse Spark's presentation quality, reaching Elo 1653 on {bold('GDPval-AA v2')} and "
+    "surpassing Opus 4.8 and Sonnet 5.0.",
     "Tech lead for Muse Spark's model behaviour on steerability and proactiveness, making the model handle "
-    "user interruption messages and device handoff messages better.",
+    "user interruption messages and subagent/device/cron messages better.",
     "Core contributor to browsing agent and multi-agents, reflected by several benchmarks reported in the "
-    "blog: DeepSearchQA, WildSearch, and multi-agent plots.",
+    f"blog: {bold('DeepSearchQA')}, {bold('WildSearch')}, and multi-agent plots.",
 ]
 for item in avocado_items:
-    story.append(Paragraph("&bull; " + e(item), styles["sub_bullet"]))
+    story.append(Paragraph("&bull; " + item, styles["sub_bullet"]))
 story.append(
     bullet(
         f"{bold('Llama3')}: Core contributor to tool-use capabilities and safety.",
