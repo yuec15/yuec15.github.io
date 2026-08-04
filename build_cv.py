@@ -36,8 +36,9 @@ def italic(text):
     return f"<i>{e(text)}</i>"
 
 
-def link(text, href):
-    return f'<link href="{href}">{e(text)}</link>'
+def link(text, href, color=None):
+    attrs = f' color="{color}"' if color else ""
+    return f'<link href="{href}"{attrs}>{e(text)}</link>'
 
 
 styles = {
@@ -217,16 +218,20 @@ story.append(Spacer(1, 4))
 story.append(Paragraph(bold("Experience:"), styles["skills"]))
 story.append(
     bullet(
-        f"{bold('Avocado (Muse Spark)')} &nbsp;"
-        + link("Release Blog", "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"),
+        f"{bold('Avocado (Muse Spark)')}: Release "
+        + link(
+            "News",
+            "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+            color="#0645AD",
+        ),
         style_name="award_bullet",
     )
 )
 avocado_items = [
     f"Tech lead for agentic financial ability, leading Muse Spark to {bold('SOTA')} on "
     f"{bold('Finance Agent v2')} and {bold('Tax Bench')}.",
-    f"Tech lead for Muse Spark's presentation quality, reaching Elo 1653 on {bold('GDPval-AA v2')} and "
-    "surpassing Opus 4.8 and Sonnet 5.0.",
+    f"Tech lead for Muse Spark's presentation quality, reaching reasoning Elo 1653 on {bold('GDPval-AA v2')} "
+    "(latest version to be released), surpassing Opus 4.8 and Sonnet 5.0.",
     "Tech lead for Muse Spark's model behaviour on steerability and proactiveness, making the model handle "
     "user interruption messages and subagent/device/cron messages better.",
     "Core contributor to browsing agent and multi-agents, reflected by several benchmarks reported in the "
