@@ -234,7 +234,7 @@ avocado_items = [
     f"Tech lead for Muse Spark's presentation quality, reaching reasoning Elo 1653 on {bold('GDPval-AA v2')} "
     "(latest version to be released), surpassing Opus 4.8 and Sonnet 5.0.",
     "Tech lead for Muse Spark's model behaviour on steerability and proactiveness, making the model handle "
-    "user interruption messages and subagent/device/cron messages better.",
+    "user interruption messages and subagent/device/cron handoff messages better.",
     "Core contributor to browsing agent and multi-agents, reflected by several benchmarks reported in the "
     f"blog: {bold('DeepSearchQA')}, {bold('WildSearch')}, and multi-agent plots.",
 ]
