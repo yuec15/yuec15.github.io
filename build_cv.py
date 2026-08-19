@@ -209,9 +209,9 @@ story.append(Spacer(1, 12))
 story.append(section("RESEARCH INTERESTS & EXPERIENCE"))
 story.append(
     Paragraph(
-        f"{bold('Interests:')} My research focuses on agentic post-training, "
-        "including vertical agentic capability (e.g. professional work, visual coding), "
-        "self-improvement agents, model behaviour, and AI for science.",
+        f"{bold('Interests:')} My general research focuses on large-scale LLM post-training. "
+        "Recent work mainly focuses on the following vertical domains: professional work, "
+        "visual coding, self-improvement and model behaviour.",
         styles["skills"],
     )
 )
