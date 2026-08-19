@@ -209,7 +209,8 @@ story.append(Spacer(1, 12))
 story.append(section("RESEARCH INTERESTS & EXPERIENCE"))
 story.append(
     Paragraph(
-        f"{bold('Interests:')} My general research focuses on large-scale LLM post-training. "
+        f"{bold('Interests:')} My general research focuses on large-scale agentic post-training "
+        "to push the capabilities of frontier models through RL. "
         "Recent work mainly focuses on the following vertical domains: professional work, "
         "visual coding, self-improvement and model behaviour.",
         styles["skills"],
